@@ -1,23 +1,27 @@
 import "./App.css";
 import HelloWorld from "./components/HelloWorld";
+import Pessoa from "./components/Pesssoa";
+import SayMyName from "./components/SayMyName";
 
 function App() {
   const nome = "Alex Simão";
-  const novoNome = nome.toUpperCase();
-  const date = new Date();
-
-  function idade(n) {
-    return date.getFullYear() - n;
-  }
-
   const myIMG = "https://github.com/AlexSimao.png";
+  const ano_do_nacimento = 2003
+
+  function idade(anoDoNacimento) {
+    const date = new Date();
+    return date.getFullYear() - anoDoNacimento;
+  }
 
   return (
     <>
-      <h2>Bem-vindo: {novoNome} </h2>
-      <img width={150} src={myIMG} alt="Minha foto" />
-      <p>Idade: {idade(2003)}</p>
-      <HelloWorld />
+      <Pessoa
+        nome={nome}
+        idade={idade(ano_do_nacimento)}
+        foto={myIMG}
+      />
+      <SayMyName nome="Julia" />
+      <SayMyName nome="Guilerme" />
     </>
   );
 }
