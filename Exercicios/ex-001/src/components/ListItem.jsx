@@ -1,7 +1,9 @@
-function ListItem({ text }) {
+function ListItem({ marca, ano_lancamento }) {
   return (
     <>
-      <li>{text}</li>
+      <li>
+        {marca} - {ano_lancamento}
+      </li>
     </>
   );
 }

@@ -4,11 +4,18 @@ function List() {
   return (
     <>
       <ul>
-        <ListItem text="Item 1" />
-        <ListItem text="Item 2" />
-        <ListItem text="Item 3" />
-        <ListItem text="Item 3" />
-        <ListItem text="Item 5" />
+        <ListItem
+          marca="Ferrari"
+          ano_lancamento="2000"
+        />
+        <ListItem
+          marca="Fiat"
+          ano_lancamento="2000"
+        />
+        <ListItem
+          marca="Renault"
+          ano_lancamento="2000"
+        />
       </ul>
     </>
   );
