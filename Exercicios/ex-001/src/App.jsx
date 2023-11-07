@@ -1,6 +1,7 @@
 import "./App.css";
 import Frase from "./components/Frase";
 import HelloWorld from "./components/HelloWorld";
+import List from "./components/List";
 import Pessoa from "./components/Pesssoa";
 import SayMyName from "./components/SayMyName";
 
@@ -25,6 +26,7 @@ function App() {
       />
       <SayMyName nome="Julia" />
       <SayMyName nome="Guilerme" />
+      <List />
     </>
   );
 }
