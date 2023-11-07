@@ -6,16 +6,17 @@ function List() {
       <ul>
         <ListItem
           marca="Ferrari"
-          ano_lancamento="2000"
+          ano_lancamento={1985}
         />
         <ListItem
           marca="Fiat"
-          ano_lancamento="2000"
+          ano_lancamento={1964}
         />
         <ListItem
-          marca="Renault"
-          ano_lancamento="2000"
+          marca="Chevrolet"
+          ano_lancamento={1999}
         />
+        <ListItem />
       </ul>
     </>
   );
