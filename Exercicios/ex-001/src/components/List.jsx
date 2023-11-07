@@ -1,22 +1,34 @@
 import ListItem from "./ListItem";
 
 function List() {
+  const Lista_de_carros = [
+    {
+      marca: "Ferrari",
+      ano: 1985,
+    },
+    {
+      marca: "Fiat",
+      ano: 1964,
+    },
+    {
+      marca: "Chevrolet",
+      ano: 1999,
+    },
+    {},
+  ];
+
   return (
     <>
       <ul>
-        <ListItem
-          marca="Ferrari"
-          ano_lancamento={1985}
-        />
-        <ListItem
-          marca="Fiat"
-          ano_lancamento={1964}
-        />
-        <ListItem
-          marca="Chevrolet"
-          ano_lancamento={1999}
-        />
-        <ListItem />
+        {Lista_de_carros.map((item, index) => {
+          return (
+            <ListItem
+              key={index}
+              marca={item.marca}
+              ano_lancamento={item.ano}
+            />
+          );
+        })}
       </ul>
     </>
   );

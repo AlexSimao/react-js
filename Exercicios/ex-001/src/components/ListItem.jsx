@@ -17,7 +17,7 @@ ListItem.propTypes = {
 
 ListItem.defaultProps = {
   marca: "Faltou a Marca",
-  ano_lancamento: 0
-}
+  ano_lancamento: 0,
+};
 
 export default ListItem;
