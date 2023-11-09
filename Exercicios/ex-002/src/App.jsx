@@ -1,10 +1,16 @@
 import "./App.css";
+import Evento from "./component/Evento";
+import Form from "./component/Form";
 
 function App() {
   return (
-    <div>
-      <h2>hello</h2>
-    </div>
+    <>
+      <div>
+        <Evento />
+        <Evento conteudo="Alex Simao" />
+      </div>
+      <Form />
+    </>
   );
 }
 
