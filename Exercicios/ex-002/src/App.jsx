@@ -7,7 +7,6 @@ function App() {
     <>
       <div>
         <Evento />
-        <Evento conteudo="Alex Simao" />
       </div>
       <Form />
     </>
