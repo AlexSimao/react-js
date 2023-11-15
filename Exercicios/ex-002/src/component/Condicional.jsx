@@ -3,7 +3,7 @@ import Button from "./Button";
 
 function Condicional() {
   const [email, setEmail] = useState("");
-  const [userEmail, setUserEmail] = useState();
+  const [userEmail, setUserEmail] = useState("");
 
   function btnEnviar(e) {
     e.preventDefault();
@@ -26,7 +26,7 @@ function Condicional() {
           event={btnEnviar}
         />
       </form>
-      {userEmail && (
+      {userEmail.length > 0 && (
         <div>
           <p>O Email do Usuário e {userEmail}</p>
         </div>
