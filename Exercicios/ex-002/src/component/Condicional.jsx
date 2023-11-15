@@ -11,9 +11,9 @@ function Condicional() {
   }
 
   function limparEmail(e) {
-    setEmail("")
+    setEmail("");
     setUserEmail("");
-    id_email.focus()
+    id_email.focus();
   }
 
   return (
