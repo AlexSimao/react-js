@@ -10,7 +10,7 @@ function Condicional() {
     setUserEmail(email);
   }
 
-  function limparEmail(e) {
+  function limparEmail() {
     setEmail("");
     setUserEmail("");
     id_email.focus();
