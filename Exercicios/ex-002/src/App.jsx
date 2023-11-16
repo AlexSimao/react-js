@@ -6,11 +6,11 @@ import Listar from "./component/Listar";
 
 function App() {
   const meusItens = ["HTML", "CSS", "JavaScript", "React"];
-  
+
   return (
     <>
       <Condicional />
-      <Listar lista={meusItens} />
+      <Listar array={meusItens} />
     </>
   );
 }

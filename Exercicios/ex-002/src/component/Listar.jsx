@@ -1,18 +1,16 @@
-import PropType from "prop-types";
+import PropTypes from "prop-types";
 
-function Listar({ lista }) {
+function Listar({ array }) {
   return (
     <>
       <h3>Lista de Itens: </h3>
-      {lista.map((Item, index) => (
-        <p key={index}>{Item}</p>
-      ))}
+      {array.length >= 1 ? array.map((Item, index) => <p key={index}>{Item}</p>) : <p>A Lista esta vazia.</p>}
     </>
   );
 }
 
-Listar.propType = {
-  lista: PropType.array.isRequired,
+Listar.propTypes = {
+  array: PropTypes.array.isRequired,
 };
 
 export default Listar;
